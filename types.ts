@@ -1,3 +1,4 @@
+// FIX: Removed self-import of 'Customer' which conflicts with the local declaration.
 export enum UserRole {
   CUSTOMER = 'customer',
   ADMIN = 'admin',
@@ -53,9 +54,7 @@ export interface BillWithCustomerInfo extends Bill {
 }
 
 export interface MeterMetric {
-    meterNumber: string;
-    customerName: string;
-    customerAccountNumber: string;
+    customer: Customer;
     totalConsumption: number;
 }
 

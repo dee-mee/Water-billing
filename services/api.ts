@@ -397,9 +397,7 @@ export const api = {
         const customerBills = MOCK_BILLS.filter(bill => bill.customerId === customer.id);
         const totalConsumption = customerBills.reduce((total, bill) => total + bill.consumption, 0);
         return {
-            meterNumber: customer.meterNumber,
-            customerName: customer.name,
-            customerAccountNumber: customer.accountNumber,
+            customer: customer,
             totalConsumption: totalConsumption,
         };
     });
