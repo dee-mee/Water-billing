@@ -1,0 +1,5 @@
+{
+  "name": "AquaTrack Water Management System",
+  "description": "A comprehensive water management system for customers to view and pay their bills online, and for administrators to manage meter readings and customer accounts.",
+  "requestFramePermissions": []
+}
